@@ -1,16 +1,18 @@
 name := "$name$"
 
+organization := "$organization$"
+
 version := "1.0-SNAPSHOT"
 
-licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0"))
+startYear := Some($year$)
 
-startYear := Some(2017)
+headerLicense := Some(HeaderLicense.MIT("$year$", "$developer$"))
 
 description := ""
 
 scalaVersion := "2.12.4"
 
-developers := List(Developer("arturopala","Artur Opala","opala.artur@gmail.com",url("https://pl.linkedin.com/in/arturopala")))
+developers := List(Developer("$developerId$","$developer$","$developerEmail$",url("$developerUrl$")))
 
 resolvers ++= Seq(
   Resolver.sonatypeRepo("releases"),
